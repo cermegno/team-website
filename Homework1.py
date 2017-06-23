@@ -6,7 +6,8 @@ app = Flask(__name__)
 @app.route('/')
 def mainmenu():
 
-    ## I need to edit "main.html" so that there is link to my function "wpj"
+    ## I need to edit "main.html" so that there is link to my function "alberto"
+
     return render_template('main.html')
 
 @app.route('/alberto')
@@ -18,6 +19,7 @@ def alberto():
     <h1>Alberto's page<br/><h3>Add your dynamic content here</html>"""
     
     return response
+
 
 @app.route('/Warren')
 def wpj():
