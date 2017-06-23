@@ -9,6 +9,16 @@ def mainmenu():
     ## I need to edit "main.html" so that there is link to my function "wpj"
     return render_template('main.html')
 
+@app.route('/alberto')
+def alberto():
+
+    ## First thing in my function: read the text file "alberto.txt"
+    ## then build my own page based on the contents of the file
+    response = """<html><body>
+    <h1>Alberto's page<br/><h3>Add your dynamic content here</html>"""
+    
+    return response
+
 @app.route('/Warren')
 def wpj():
 
